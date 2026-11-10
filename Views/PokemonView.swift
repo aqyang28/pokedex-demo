@@ -7,7 +7,11 @@
 
 import SwiftUI
 
-static var example: Pokemon {
+
+struct PokemonView: View {
+    var pokemon: Pokemon
+    
+    static var example: Pokemon {
         Pokemon(id: 1, num: "001", name: "Bulbasaur", img: "http://www.serebii.net/pokemongo/pokemon/001.png", type: [
             TypeElement(rawValue: "Grass")!,
             TypeElement(rawValue: "Poison")!
@@ -23,9 +27,7 @@ static var example: Pokemon {
     }
 
 
-struct PokemonView: View {
-    var pokemon: Pokemon
-    
+
     var body: some View {
         // TODO: Display your desired information about the pokemon
     }

@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("\(pokedexService.pokemon.count)")
-            Text(pokedexService.getPokemonById(id: 3).name)
+            Text(pokedexService.getPokemonById(id: 3)?.name ?? "Missing")
         }
     }
 }
